@@ -2,27 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
+  <main class="main_container">
+    <!-- Info Section -->
+    <section class="info_container">
+      <div class="logo_container">
+        <div class="logo"></div>
+      </div>
+      <section class="description_container">
+        <h1><span>We're</span> coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </section>
+      <div class="input_container">
+        <input type="email" class="input_text" placeholder="Email Address">
+        <label for="input_text" class="msg_error"></label>
+        <div class="error">
+          <div class="error_icon"></div>
+        </div>
+        <div class="btn">
+          <div class="arrow_icon"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Image Container -->
+    <section class="image_container"></section>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
