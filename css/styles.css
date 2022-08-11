@@ -137,3 +137,42 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+@media screen and (max-width: 1024px) {
+    .info_container {
+        padding: 4.063rem 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info_container {
+        padding: 4.063rem 5rem;
+    }
+    .description_container h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 35% 1fr;
+        grid-template-areas: 
+        "logo_container"
+        "image_container"
+        "description_container";
+        width: 100%;
+    }
+    .logo_container {
+        grid-area: logo_container;
+        left: 5%;
+        position: absolute;
+        height: 3rem;
+        top: 5%;
+    }
+    .info_container {
+        grid-area: description_container;
+    }
+    .image_container {
+        background-image: url(../src/img/hero-mobile.jpg);
+        background-size: 100% 100%;
+        grid-area: image_container;
+    }
+}
